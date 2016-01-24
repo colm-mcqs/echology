@@ -10,7 +10,7 @@ angular.module('echoApp', [
 ]).
 config(['$routeProvider', function($routeProvider, $locationProvider) {
         $routeProvider.otherwise({redirectTo: '/index.html'});
-        $locationProvider.html5Mode(true);
+       // $locationProvider.html5Mode(true);
 
 }])
     .controller('echoController', function($scope, $location, $anchorScroll, $modal, parallaxHelper){
@@ -45,7 +45,7 @@ config(['$routeProvider', function($routeProvider, $locationProvider) {
                     $scope.error = !data.mail;
                     $scope.user = {};
                 }).
-                error(function (data) {
+                error(function () {
                     $scope.error = true;
                 });
         }
@@ -69,4 +69,4 @@ config(['$routeProvider', function($routeProvider, $locationProvider) {
         });
     };
 
-});;
+});

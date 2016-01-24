@@ -2,7 +2,7 @@
  * Created by Margo on 31/07/15.
  */
 var express = require('express')
-    ,mongoose = require('mongoose')
+    ,mongoose = require('mongoose');
 
 var app = express()
     , bodyParser=require('body-parser')
@@ -19,7 +19,7 @@ app
     .set('superSecret', config.secret)// secret variable
     .set('views', 'app/partials')
     .engine('html', require('ejs').renderFile)
-    .set('view engine', 'html')
+    .set('view engine', 'html');
 
 require('./routes.js')(apiRoutes, app);
 app.use('/api', apiRoutes);
