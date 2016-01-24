@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="echoApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Echology</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/perfect-scrollbar/min/perfect-scrollbar.min.css" />
+  <link rel="stylesheet" href="css/app.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body ng-controller="echoController" style="background:rgb(247, 246, 246);">
+
+<div ng-view></div>
+
+<div>
+
+    <!--<perfect-scrollbar class="scroller" wheel-propagation="true" wheel-speed="10" min-scrollbar-length="20">-->
+    <header class="jumbotron jumbotron-cover">
+        <div class="container">
+            <div>
+                <img class="img-responsive pull-left cover-image" src="images/logo/2.svg" du-parallax y="background" alt=""/>
+<!--
+                <address id="cover-address">
+                    Looking at the seabed for green bits since 2010<br>
+
+                    <strong>Echology Ltd.</strong><br>
+                    Menai Bridge<br>
+                    Anglesey<br>
+                    UK<br>
+                    <br>
+                    <a id="cover-email" href="mailto:#">jack@echology.co.uk</a>
+                </address>-->
+            </div>
+        </div>
+    </header>
+    <div class="navbar navbar-default navbar-static-top" id="topNav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <a type="button" class="btn btn-default btn-lg navbar-btn nav-button" du-smooth-scroll offset="61" href="#welcome"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    <a type="button" class="btn btn-default btn-lg navbar-btn nav-button" du-smooth-scroll offset="61" href="#seabedMapping">Seabed Mapping</a>
+                    <a type="button" class="btn btn-default btn-lg navbar-btn nav-button" du-smooth-scroll offset="61" href="#gis">GIS</a>
+                    <a type="button" class="btn btn-default btn-lg navbar-btn nav-button" du-smooth-scroll offset="61" href="#otherServices">Other Services</a>
+                    <a type="button" class="btn btn-default btn-lg navbar-btn nav-button" du-smooth-scroll offset="61" href="#equipment">Equipment</a>
+                    <a type="button" class="btn btn-default btn-lg navbar-btn nav-button" ng-click="contactModal()"><span class="glyphicon glyphicon-envelope"></span> Contact Echology</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!--<cover-directive></cover-directive>
+        <navbar-directive></navbar-directive>-->
+        <welcome-directive id="welcome"></welcome-directive>
+        <seabed-mapping-directive id="seabedMapping"></seabed-mapping-directive>
+        <gis-directive id="gis"></gis-directive>
+        <other-services-directive id="otherServices"></other-services-directive>
+        <equipment-directive id="equipment"></equipment-directive>
+        <contact-directive></contact-directive>
+    <!--</perfect-scrollbar>-->
+</div>
+
+</body>
+<footer>
+
+
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/raphaeljs/raphael-min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="bower_components/perfect-scrollbar/min/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script type="text/javascript" src="bower_components/ng-parallax/angular-parallax.min.js"></script>
+    <script type="text/javascript" src="bower_components/perfect-scrollbar/min/perfect-scrollbar.with-mousewheel.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-perfect-scrollbar/src/angular-perfect-scrollbar.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/worldPaths.js"></script>
+    <script type="text/javascript" src="js/directives/navbar.js"></script>
+    <script type="text/javascript" src="js/directives/welcome.js"></script>
+    <script type="text/javascript" src="js/directives/cover.js"></script>
+    <script type="text/javascript" src="js/directives/seabedMapping.js"></script>
+    <script type="text/javascript" src="js/directives/gis.js"></script>
+    <script type="text/javascript" src="js/directives/otherServices.js"></script>
+    <script type="text/javascript" src="js/directives/equipment.js"></script>
+    <script type="text/javascript" src="js/directives/contact.js"></script>
+    <script type="text/javascript" src="js/directives/contact-modal.js"></script>
+    <script>/* affix the navbar after scroll below header */
+    window.onload = function() {
+        //your code here
+        /* affix the navbar after scroll below header */
+        $('#topNav').affix({
+            offset: {
+                top: $('header').height()-$('#topNav').height()
+            }
+        });
+
+        /* highlight the top nav as scrolling occurs */
+        $('body').scrollspy({ target: '#topNav' })
+
+        /* smooth scrolling for scroll to top */
+        $('.scroll-top').click(function(){
+            $('body,html').animate({scrollTop:0},1000);
+        });
+
+        /* smooth scrolling for nav sections */
+        $('#topNav .navbar-nav button').click(function(){
+            var link = $(this).attr('href');
+            var posi = $(link).offset().top+20;
+            $('body,html').animate({scrollTop:posi},700);
+        });
+
+    };</script>
+</footer>
+</html>

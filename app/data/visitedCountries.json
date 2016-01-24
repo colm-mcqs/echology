@@ -1,0 +1,22 @@
+{
+"PE": {"n":"Peru"},
+"ID": {"n":"Indonesia"},
+"CN": {"n":"China"},
+"UA": {"n":"Ukraine"},
+"BY": {"n":"Belarus"},
+"KZ": {"n":"Kazakhstan"},
+"TR": {"n":"Turkey"},
+"ZA": {"n":"South Africa"},
+"AR": {"n":"Argentina"},
+"CL": {"n":"Chile"},
+"CU": {"n":"Cuba"},
+"MX": {"n":"Mexico"},
+"BR": {"n":"Brazil"},
+"RU": {"n": "Russian Federation"},
+"US":{"n": "United States"},
+"GB":{"n": "United Kingdom"},
+"FR":{"n": "France"},
+"IT":{"n": "Italy"},
+"EG":{"n": "Egypt"},
+"AT":{"n": "Austria"}
+}

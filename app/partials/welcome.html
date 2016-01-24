@@ -1,0 +1,37 @@
+<div class="center-block section-text">
+    <p>
+        Welcome to Echology Ltd.
+        We are an environmental consultancy focussed on the acoustic mapping and monitoring of marine and aquatic resources (hydroacoustics).
+        Our hydroacoustic surveys can provide fisheries stock assessment giving the abundance, biomass and distribution of fish over the survey area.
+    </p>
+    <p>
+        We are also highly experienced in mapping important habitats such as seagrass beds and kelp forests with acoustic technology.
+        Echology own and operate the latest acoustic equipment (Biosonics DTX Split Beam Echosounder) and software in combination with GPS to allow the data to be analysed and presented geographically in a GIS project.
+        Find more information on our equipment below.
+    </p>
+    <p>
+        Whilst our speciality is hydroacoustics, we can also provide a range of other marine environmental services to our clients. Please click on Other Services to see what we do.
+        Echology works on scientific research projects and also for commercial clients.
+    </p>
+    <p>
+        We are based on The Isle of Anglesey, North Wales, but can work internationally.
+    </p>
+    <h2 style="text-align: center;margin: 30px 0 0 0;">Notable Projects</h2>
+
+    <div class="row project-row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div ng-repeat="project in projects">
+                <div class="col-md-4">
+                    <img ng_src="{{project.url}}" class="img-circle project-image center-block"
+                         ng-click="projectModal(project)">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+    <div class="row map-container">
+    <h2 style="text-align: center;margin: 50px 0 10px 0;">Where We Have Worked</h2>
+    <div id="echologyMap"></div>
+    </div>
+</div>
