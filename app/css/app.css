@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Kreon:400,700);
+
+html,
+body {
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Raleway", Helvetica, Arial, sans-serif!important;
+}
+
+
+.vertical-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center;     /* Align the flex-items vertically */
+    justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
+.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroller {
+    white-space: pre-line;
+    height: 500px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+#topNav {
+    width: 100%;
+    position:static;
+    top:-32px;
+}
+
+#topNav.affix {
+    position: fixed;
+    top: 0;
+    z-index:10;
+    -webkit-transition: all .6s ease-in-out;
+}
+
+
+.jumbotron-cover {
+    position: relative;
+    background:  url("../images/sardines-reef-caribbean_89671_990x742.jpg") no-repeat scroll 0 100% / cover transparent;
+    display:block;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    margin-bottom: 0;
+    padding-top:0;
+    overflow: hidden;
+}
+
+.cover-image{
+    max-height:50%;
+}
+
+.jumbotron-seabed{
+    position: relative;
+    background:  url("../images/6b16026d7715fb2df5a5ed55ab4cf5e4_1bae.jpg") center center;
+    width: 100%;
+    min-height: 300px;
+    border-top: 62px solid transparent;
+    margin-top: -62px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron-gis{
+    position: relative;
+    background:  url("../images/gis_dots.jpg") center center;
+    width: 100%;
+    min-height: 300px;
+    border-top: 62px solid transparent;
+    margin-top: -62px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.jumbotron-other{
+    position: relative;
+    background:  url("../images/a225f8192ff181777f7b405c36564f00.png") center center;
+    width: 100%;
+    min-height: 300px;
+    border-top: 62px solid transparent;
+    margin-top: -62px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.project-row{
+    margin: 2% 5% 0 5%;
+}
+.project-image{
+    position:relative;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.project-text{
+    position: relative;
+    margin: 20px 0 20px 0;
+    padding: 0 10px 0 10px;
+}
+.jumbotron-equipment{
+    position: relative;
+    background:  url("../images/gopro_zoom.jpg") center center;
+    width: 100%;
+    min-height: 200px;
+    border-top: 62px solid transparent;
+    margin-top: -62px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-size: cover;
+    overflow: hidden;
+}
+#section-title{
+    color:black;
+    text-align: justify;
+}
+.section-text{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: large;
+}
+
+.section-img{
+    margin: auto auto;
+    max-width: 50%;
+    padding: 25px 0 25px 0;
+}
+#welcome {
+    position:relative;
+    border-top: 62px solid transparent;
+    margin-top: -62px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#cover-address{
+    color:white;
+}
+
+#cover-email{
+    color:white;
+}
+.img-responsive.pull-left{
+    padding-right: 10px !important;
+}
+
+
+#echologyMap {width: 980px; height: 380px; margin: 70px auto 0 auto; }
