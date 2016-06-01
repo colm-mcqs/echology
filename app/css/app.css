@@ -119,8 +119,8 @@ body {
 
 .project-text{
     position: relative;
-    margin: 20px 0 20px 0;
-    padding: 0 10px 0 10px;
+    margin: .5% 0 .5% 0;
+    padding: 0 3% 0 3%;
 }
 .jumbotron-equipment{
     position: relative;
@@ -140,8 +140,8 @@ body {
     text-align: justify;
 }
 .section-text{
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 3%;
+    margin-right: 3%;
     padding-top: 2%;
     padding-bottom: 3%;
     font-size: large;
