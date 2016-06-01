@@ -16,11 +16,11 @@
     <p>
         We are based on The Isle of Anglesey, North Wales, but can work internationally.
     </p>
+    <div class="hidden-xs">
     <h2 style="text-align: center;margin: 30px 0 0 0;">Notable Projects</h2>
 
     <div class="row project-row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 col-xs-6">
             <div ng-repeat="project in projects">
                 <div class="col-md-4">
                     <img ng_src="{{project.url}}" class="img-circle project-image center-block"
@@ -28,10 +28,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3"></div>
         </div>
     <div class="row map-container">
     <h2 style="text-align: center;margin: 50px 0 10px 0;">Where We Have Worked</h2>
     <div id="echologyMap"></div>
+    </div>
     </div>
 </div>

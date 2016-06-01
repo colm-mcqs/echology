@@ -107,7 +107,15 @@ body {
 }
 
 .project-row{
-    margin: 2% 5% 0 5%;
+    position: relative;
+    top: 5%;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .project-image{
     position:relative;
